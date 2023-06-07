@@ -13,3 +13,11 @@ function IGKQ(){
 function IMQ(){
     window.location = "IMQ.html";
 }
+
+function RMQP(){
+    window.location = "RMQP.html";
+}
+
+function IGQ(){
+    window.location = "IGQ.html";
+}
