@@ -1,52 +1,50 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <title>Sainik/RMS Question papers</title>
-    <link rel="stylesheet" href="Style.css">
+ 
+<html>
+    <head>
+      <title>Image recognition</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+      <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+  
+     <link rel="stylesheet" href="style.css">
     
-</head>
-<body>
-    <center>
-        <div>      
-        <img src="IMG1.jpg" class="Img">
-        <br><Br>
-            <button style="width: 1200px;" class="Matter">My name is Gandham Dheeraj, at present I am studying 7th standard in ZPHS Boys, Gorantla. During Corona lockdown period, when I was studying  5th standard, I prepared for Sainik and Rashtriya Military School entrance exams myself by bringing all the material online. With the help of this online material, I could score 76% in Sainik School Exam and 68% in Rashtriya Military School Exam.
+    </head>
+  
+    <body>
+        <div class="container">
+            <center>
+                <h3 class="btn btn-info heading" >IMAGE RECOGNITION</h3>
+                <br><br>
+                <p style="font-size: 25px;"> Model trained to identify the following objects: </p>
+                <br><br>
+                <div class="object_names">
+                    <h3>Watch</h3>
+                    <hr>
+                    <h3>Phone</h3>
+                    <hr>
+                    <h3>Water Bottle</h3>
+                    <hr>
+                </div>
 
-                I have prepared so much valuable material sitting in a corner of my house at that moment.  I have created a website and uploaded  the same with the hope that it might be useful to someone who wants to appear for the above entrance exams. Those who need it may download and utilise it. 
-                
-                This website has subject wise Math - 3087, English - 2155, GK & Science - 2375, Reasoning - 1725 total 9342 questions including all subjects. <h2 style="font-size: 26px; color: white; text-align: center;">Wishing you all the best.</h2> <h2 style="font-size: 26px; color: white; text-align: right;">--- Your's, Gandham Dheeraj</h2></button>
+                <label>Webcam View :</label>
+                <div id="camera"></div>
+                <br><br>
+                <div id="result"></div>
+                <br><br>
+                <button class="btn btn-info" onclick="take_snapshot()">Capture Image</button>
+                <br><br>
+                <button class="btn btn-success" onclick="check()">Identify Image</button>
+                <br><br>
+                <p style="font-size: 22px;">Object : <span id="object_name"></span> </p>
+                <p style="font-size: 22px;">Accuracy : <span id="object_accuracy"></span> </p>
+            </center>
         </div>
-        <br>
-        <button onclick="PQP()" class="Btnsainik">Sainik & RMS Previous year Question Papers</button>
-        <br>
-        <br>
-        <button onclick="MQP()" class="Btnsainik">Sainik Model Question Papers</button>
-        <br>
-        <br>
-        <button onclick="RMQP()" class="Btnsainik">RMS Model Question Papers</button>
-        <br>
-        <br>
-        <button onclick="IGQ()" class="Btnsainik">Grammar Practice Papers</button>
-        <br>
-        <br>
-        <button onclick="IMQ()" class="Btnsainik">Math Questions</button>
-        <br>
-        <br>
-        <button onclick="IGKQ()" class="Btnsainik">GK Questions</button>
-        
-        
-        
-        <script src="main.js"></script>
-        <br>
-        <br>
-        
-        <a href="https://technoblade19876.github.io/About-Dheeraj/about%20dheeraj.html" style="font-size: 30px ; color: whitesmoke;">My Blog</a>
-</center> 
-
-</body>
-</html>
-
-    
+    <script src="main.js"></script>
+    </body>
+  </html>
+  
+   
