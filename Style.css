@@ -41,3 +41,10 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     text-align: justify;
 }
+.copyright-footer{
+    background-color: gray;
+    padding: 10px;
+}
+.dev{
+text-align: right;
+}
